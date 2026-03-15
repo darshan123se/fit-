@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EliteFit Gym</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Poppins, sans-serif;background:#0b0b0b;color:#fff;line-height:1.6}
+
+/* NAVBAR */
+header{background:#000;display:flex;justify-content:space-between;align-items:center;padding:15px 20px;position:sticky;top:0;z-index:100}
+header h1{color:#ff4d00;font-size:22px}
+nav{display:flex;gap:15px}
+nav a{color:white;text-decoration:none;font-size:14px}
+
+/* HERO */
+.hero{height:85vh;background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url('https://images.unsplash.com/photo-1599058917212-d750089bc07e');background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px}
+.hero h2{font-size:36px;margin-bottom:10px}
+.hero p{font-size:16px;margin-bottom:20px}
+.btn{background:#ff4d00;color:white;border:none;padding:14px 28px;border-radius:6px;font-size:16px}
+
+section{padding:50px 20px}
+section h2{text-align:center;margin-bottom:25px}
+
+/* ABOUT */
+.about{display:flex;flex-direction:column;gap:20px}
+.about img{width:100%;border-radius:10px}
+
+/* SERVICES */
+.services{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.card{background:#151515;padding:20px;border-radius:10px;text-align:center}
+
+/* TRAINERS */
+.trainers{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.trainer img{width:100%;border-radius:10px}
+.trainer{text-align:center}
+
+/* PLANS */
+.pricing{display:flex;flex-direction:column;gap:20px}
+.plan{background:#151515;padding:25px;border-radius:10px;text-align:center}
+.plan h3{color:#ff4d00}
+
+/* GALLERY */
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.gallery img{width:100%;border-radius:8px}
+
+/* TESTIMONIALS */
+.testimonials{display:flex;flex-direction:column;gap:15px}
+.review{background:#151515;padding:20px;border-radius:10px}
+
+/* CONTACT */
+.contact{display:flex;flex-direction:column;gap:20px}
+form input,form textarea{width:100%;padding:12px;border:none;border-radius:6px;margin-bottom:10px}
+
+footer{background:#000;text-align:center;padding:20px;font-size:14px}
+
+/* TABLET */
+@media(min-width:768px){
+.hero h2{font-size:48px}
+.services{grid-template-columns:repeat(3,1fr)}
+.trainers{grid-template-columns:repeat(3,1fr)}
+.gallery{grid-template-columns:repeat(3,1fr)}
+.pricing{flex-direction:row;justify-content:center}
+.about{flex-direction:row}
+.about img{width:50%}
+}
+
+/* DESKTOP */
+@media(min-width:1100px){
+section{padding:80px}
+.hero h2{font-size:60px}
+nav a{font-size:16px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>EliteFit</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#plans">Plans</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h2>Train Hard. Stay Fit.</h2>
+<p>Modern equipment • Expert trainers • Real results</p>
+<button class="btn">Join Now</button>
+</div>
+</section>
+
+<section id="about">
+<h2>About Our Gym</h2>
+<div class="about">
+<div>
+<p>EliteFit Gym helps people transform their bodies and build healthy lifestyles. Our gym includes modern machines, expert trainers, and professional workout programs.</p>
+<p>✔ Weight loss programs</p>
+<p>✔ Muscle building training</p>
+<p>✔ Diet & nutrition guidance</p>
+</div>
+<img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48">
+</div>
+</section>
+
+<section id="services">
+<h2>Services</h2>
+<div class="services">
+<div class="card">Weight Training</div>
+<div class="card">Personal Training</div>
+<div class="card">Cardio Fitness</div>
+<div class="card">Yoga Classes</div>
+</div>
+</section>
+
+<section id="plans">
+<h2>Membership Plans</h2>
+<div class="pricing">
+<div class="plan">
+<h3>Basic</h3>
+<p>₹999 / month</p>
+<button class="btn">Join</button>
+</div>
+<div class="plan">
+<h3>Pro</h3>
+<p>₹1999 / month</p>
+<button class="btn">Join</button>
+</div>
+<div class="plan">
+<h3>Elite</h3>
+<p>₹2999 / month</p>
+<button class="btn">Join</button>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Gallery</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b">
+<img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61">
+<img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1">
+<img src="https://images.unsplash.com/photo-1594737625785-c1c0a31f2b4f">
+</div>
+</section>
+
+<section>
+<h2>Testimonials</h2>
+<div class="testimonials">
+<div class="review">⭐ "Best gym in the city!"</div>
+<div class="review">⭐ "Amazing trainers and equipment."</div>
+<div class="review">⭐ "Lost 10kg in 3 months."</div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div class="contact">
+<div>
+<p>📍 Your Gym Address</p>
+<p>📞 +91 9876543210</p>
+<p>📧 elitefit@gmail.com</p>
+</div>
+<form>
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Email">
+<textarea rows="4" placeholder="Message"></textarea>
+<button class="btn">Send</button>
+</form>
+</div>
+</section>
+
+<footer>
+<p>© 2026 EliteFit Gym</p>
+</footer>
+
+</body>
+</html>
